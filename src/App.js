@@ -13,8 +13,6 @@ function App() {
     `search/collections?page=1&query=cats&client_id=${process.env.KEY}`
   );
 
-  console.log(response);
-
   const value = {
     response,
     isLoading,
