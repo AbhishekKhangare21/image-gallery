@@ -11,9 +11,7 @@ const useAxios = ({ param }) => {
   const fetchData = async (url) => {
     try {
       setIsLoading(true);
-      const res = await axios(
-        "https://api.unsplash.com/search/collections?page=1&query=car&client_id=0LtUEVvRiLzwwhdfX38YtvYEa_71f12zkmUKxeQjx78"
-      );
+      const res = await axios(url);
 
       setResponse(res.data.results);
     } catch (err) {
